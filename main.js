@@ -27,12 +27,12 @@ class Triangle {
   }
 
   drawOriginPoints() {
+    // 画个圆心
     const radius = this.canvas.clientWidth / 2;
-    // this.ctx.beginPath()
-    // this.ctx.arc(radius, radius, radius, 0, Math.PI * 2, true)
-    // this.ctx.stroke()
     const centerPoint = { x: radius, y: radius };
     this._drawPoint(centerPoint.x, centerPoint.y);
+
+    // 画三角形的3个点
     this.originPoints = [
       { x: radius, y: 0 },
       {
